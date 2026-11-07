@@ -16,6 +16,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
   <script src="/animations.js" defer></script>
+  <script src="/prompt-builder.js" defer></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,6 +67,44 @@
         <p class="hero-platforms">For sellers on Etsy, Shopify, Amazon, eBay and print-on-demand.</p>
       </section>
 
+      <section class="builder-section">
+        <h2>Try it: build your AI prompt in seconds</h2>
+        <p class="section-intro">Pick where you sell and what you need, add a few facts, and copy a ready-made prompt.</p>
+      <div class="tool-window" data-prompt-builder>
+        <div class="tool-window-bar"><span class="tool-window-dots"><i></i><i></i><i></i></span><span>Prompt builder</span><span class="tool-window-badge">Try it</span></div>
+        <div class="tool-window-body">
+          <form class="builder-form" onsubmit="return false">
+            <label>Where do you sell?
+              <select name="platform">
+                <option>Etsy</option><option>Shopify</option><option>Amazon</option><option>eBay</option><option value="online">My own website</option>
+              </select>
+            </label>
+            <label>What do you need?
+              <select name="task">
+                <option value="description">Product description</option>
+                <option value="title">Product title ideas</option>
+                <option value="reply">Reply to a customer</option>
+                <option value="social">Social media posts</option>
+              </select>
+            </label>
+            <label>Tone
+              <select name="tone">
+                <option value="friendly">Friendly</option><option value="professional">Professional</option><option value="playful">Playful</option><option value="calm and simple">Calm and simple</option>
+              </select>
+            </label>
+            <label>Your product facts
+              <textarea name="facts" rows="5"></textarea>
+            </label>
+            <p class="builder-note">Nothing you type leaves this page. Paste the result into ChatGPT, Claude or Gemini.</p>
+          </form>
+          <div class="builder-result">
+            <div class="builder-result-label"><span>Your prompt</span><button class="button button-small" type="button" data-prompt-copy>Copy prompt</button></div>
+            <pre data-prompt-output aria-live="polite"></pre>
+          </div>
+        </div>
+      </div>
+      </section>
+
       <section>
         <h2>Latest guides</h2>
         <ul class="card-grid">
@@ -75,7 +114,8 @@
       </section>
 
       <section>
-        <h2>Browse by topic</h2>
+        <h2>From plain idea to published page, all in one notebook</h2>
+        <p class="section-intro">Pick a topic to see every guide for that part of your shop.</p>
         <ul class="card-grid topic-grid">
         <li class="card"><h3><a href="/listings/">Listings and product descriptions</a></h3><p>Write titles and descriptions that are clear, accurate and easy to find, with AI doing the first draft.</p></li>
         <li class="card"><h3><a href="/product-photos/">Product photos and images</a></h3><p>Clean backgrounds, lifestyle shots and mockups, with tools tested by hand.</p></li>
@@ -102,6 +142,7 @@
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
       <a href="/tools/">Tools tested</a>
+      <a href="/prompt-builder/">Prompt builder</a>
       <a href="/privacy/">Privacy</a>
       <a href="/disclosure/">Affiliate disclosure</a>
       </nav>
