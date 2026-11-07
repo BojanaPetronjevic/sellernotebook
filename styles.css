@@ -98,8 +98,11 @@ mark { background: linear-gradient(transparent 45%, var(--color-highlight) 45%);
 .tag { display: inline-block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: 6px; }
 .soon { color: var(--color-muted); font-style: italic; }
 
-/* Notebook-lined section */
-.lined { background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, var(--color-line) 31px, var(--color-line) 32px); padding: 8px 0; }
+/* Home page: five topics in one row on wide screens, three principles side by side */
+.topic-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.principles { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.principle-number { display: block; font-family: var(--font-heading); font-size: 1.6rem; line-height: 1; color: var(--color-accent); margin-bottom: 10px; }
+.principles .card p a { white-space: nowrap; }
 
 section { padding: 24px 0; }
 
