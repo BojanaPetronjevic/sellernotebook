@@ -260,9 +260,8 @@ section { padding: 24px 0; }
   .tool-window-body { grid-template-columns: 1fr; }
   .builder-form { border-right: none; border-bottom: 1px solid var(--color-line); }
 }
-.builder-tip { margin: 2px 0 0; font-size: 0.95rem; line-height: 1.6; color: var(--color-ink); }
 .builder-tip-highlight {
-  font-weight: 600;
-  background-image: linear-gradient(transparent 55%, var(--color-highlight) 55%);
-  padding: 0 2px;
+  color: var(--color-ink);
+  background-image: linear-gradient(transparent 62%, var(--color-highlight) 62%);
+  padding: 0 1px;
 }
