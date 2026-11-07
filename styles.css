@@ -69,7 +69,14 @@ h1 { font-size: clamp(2rem, 5vw, 2.9rem); margin: 0 0 16px; }
 h2 { font-size: 1.6rem; margin: 48px 0 12px; }
 h3 { font-size: 1.2rem; margin: 32px 0 8px; }
 
-mark { background: linear-gradient(transparent 45%, var(--color-highlight) 45%); color: inherit; padding: 0 2px; }
+mark {
+  background-image: linear-gradient(transparent 45%, var(--color-highlight) 45%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+  color: inherit;
+  padding: 0 2px;
+}
 
 .container { width: 100%; max-width: var(--page-width); margin: 0 auto; padding: 0 16px; }
 .narrow { max-width: var(--text-width); }
@@ -145,4 +152,30 @@ section { padding: 24px 0; }
   body { font-size: 16px; }
   .hero { padding: 40px 0 24px; }
   h2 { font-size: 1.4rem; }
+}
+
+/* ---------------------------------------------------------------
+   Animations (driven by animations.js)
+   They only run when the visitor allows motion. Without JavaScript,
+   or with "reduce motion" turned on, everything is simply visible.
+   --------------------------------------------------------------- */
+.card { transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* 4. Cards lift slightly on hover */
+  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(31, 29, 26, 0.08); border-color: var(--color-accent-soft); }
+
+  /* 1. Fade and slide up on scroll */
+  .animations-on .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .animations-on .reveal.is-visible { opacity: 1; transform: none; }
+  .animations-on .card.reveal.is-visible:hover { transform: translateY(-4px); transition-delay: 0s; }
+
+  /* 3. Hero heading appears word by word */
+  .animations-on .hero-word { display: inline-block; opacity: 0; transform: translateY(0.4em); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .animations-on .hero h1.is-visible .hero-word { opacity: 1; transform: none; }
+
+  /* 2. Highlighter draws itself from left to right */
+  .animations-on main mark { background-size: 0% 100%; transition: background-size 0.8s ease; }
+  .animations-on main mark.is-visible,
+  .animations-on .hero h1.is-visible mark { background-size: 100% 100%; }
 }

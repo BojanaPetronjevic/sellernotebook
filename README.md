@@ -7,6 +7,7 @@ A small content site with honest AI guides for online sellers. Plain HTML and CS
 |---|---|
 | `index.html` | Home page |
 | `styles.css` | The whole look of the site, shared by every page |
+| `animations.js` | Scroll and hover animations; timings are in `ANIMATION_SETTINGS` at the top |
 | `listings/`, `product-photos/`, `customer-service/`, `marketing/`, `shop-seo/` | Topic pages that list the guides |
 | `etsy-product-descriptions-ai/`, `ai-prompts-customer-messages/` | Guides (each guide is a folder with an `index.html`, so its address is short) |
 | `prompts/` | Prompt library: links to every prompt in the guides |
@@ -21,6 +22,7 @@ A small content site with honest AI guides for online sellers. Plain HTML and CS
 
 ## Where to change things
 - **Colours, fonts, grain strength:** the `:root` block at the top of `styles.css`. `--grain-opacity` sets how strong the grain is (light and dark mode have separate values).
+- **Animations:** speeds and delays are in `ANIMATION_SETTINGS` at the top of `animations.js`; the animation styles are at the bottom of `styles.css`. Visitors who turn off motion in their device settings see no animations.
 - **Menu and footer links:** in every page's `<header>` and `<footer>`; they are the same on every page.
 - **Author name and email:** in the About, Contact and Privacy pages and the author box at the end of each guide.
 
