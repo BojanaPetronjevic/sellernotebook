@@ -17,7 +17,7 @@
   --text-width: 700px;
   --radius: 10px;
   /* Grain: change --grain-opacity to make it stronger or weaker. */
-  --grain-opacity: 0.16;
+  --grain-opacity: 0.26;
   --grain-blend: multiply;
 }
 
@@ -31,7 +31,7 @@
     --color-accent: #9db3f0;
     --color-accent-soft: #263152;
     --color-highlight: #6b5d1c;
-    --grain-opacity: 0.12;
+    --grain-opacity: 0.2;
     --grain-blend: screen;
   }
 }
