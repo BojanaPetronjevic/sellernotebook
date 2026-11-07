@@ -21,6 +21,24 @@ var ANIMATION_SETTINGS = {
   splitHeroHeadingIntoWords();
   prepareRevealElements();
   watchElements();
+  addSafetyNet();
+
+  // If a browser is slow to report what is on screen, show the hero and
+  // everything already in view after a short wait, so nothing stays hidden.
+  function addSafetyNet() {
+    setTimeout(function () {
+      var heading = document.querySelector('.hero h1');
+      if (heading) {
+        heading.classList.add('is-visible');
+      }
+      document.querySelectorAll('.reveal:not(.is-visible), main mark:not(.is-visible)').forEach(function (element) {
+        var box = element.getBoundingClientRect();
+        if (box.top < window.innerHeight && box.bottom > 0) {
+          element.classList.add('is-visible');
+        }
+      });
+    }, 1500);
+  }
 
   function splitHeroHeadingIntoWords() {
     var heading = document.querySelector('.hero h1');

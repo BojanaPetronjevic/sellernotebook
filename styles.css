@@ -7,9 +7,15 @@
   --color-ink: #1f1d1a;          /* main text */
   --color-muted: #6a645a;        /* secondary text */
   --color-line: #ddd4c3;         /* borders and notebook lines */
-  --color-accent: #2f4fa2;       /* ink-blue links and buttons */
-  --color-accent-soft: #e3e8f6;
+  --color-accent: #6a48a8;       /* purple links, numbers and accents */
+  --color-accent-soft: #ece5f7;
+  /* Soft shaded sides: purple on the left, warm yellow on the right. Raise or lower the last number (opacity) to change strength. */
+  --side-glow-left: rgba(106, 72, 168, 0.13);
+  --side-glow-right: rgba(240, 205, 90, 0.20);
   --color-highlight: #f7e48a;    /* highlighter yellow */
+  --color-button: #f4cf4f;       /* yellow call-to-action buttons */
+  --color-button-hover: #f0c22e;
+  --color-button-text: #1f1d1a;
   --font-heading: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-code: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -28,9 +34,14 @@
     --color-ink: #efe9dd;
     --color-muted: #aaa294;
     --color-line: #3a3631;
-    --color-accent: #9db3f0;
-    --color-accent-soft: #263152;
+    --color-accent: #c3aef0;
+    --color-accent-soft: #2f2747;
+    --side-glow-left: rgba(150, 110, 230, 0.16);
+    --side-glow-right: rgba(230, 195, 80, 0.08);
     --color-highlight: #6b5d1c;
+    --color-button: #f4cf4f;
+    --color-button-hover: #f7d96e;
+    --color-button-text: #1f1d1a;
     --grain-opacity: 0.2;
     --grain-blend: screen;
   }
@@ -40,9 +51,23 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+html { background: var(--color-paper); }
+
+/* Seamless shaded sides: two very wide radial gradients that fade to nothing, fixed to the screen. */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 95% at 0% 45%, var(--side-glow-left) 0%, transparent 100%),
+    radial-gradient(ellipse 55% 95% at 100% 55%, var(--side-glow-right) 0%, transparent 100%);
+}
+
 body {
   margin: 0;
-  background: var(--color-paper);
+  background: transparent;
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: 17px;
@@ -163,7 +188,7 @@ section { padding: 24px 0; }
 
 @media (prefers-reduced-motion: no-preference) {
   /* 4. Cards lift slightly on hover */
-  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(31, 29, 26, 0.08); border-color: var(--color-accent-soft); }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(74, 48, 120, 0.10); border-color: var(--color-accent-soft); }
 
   /* 1. Fade and slide up on scroll */
   .animations-on .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -182,3 +207,21 @@ section { padding: 24px 0; }
 
 /* Small line under the home page intro */
 .hero-platforms { margin: 12px 0 0; font-size: 0.9rem; color: var(--color-muted); }
+
+/* Call-to-action buttons */
+.button {
+  display: inline-block;
+  background: var(--color-button);
+  color: var(--color-button-text);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  box-shadow: 0 6px 18px rgba(240, 194, 46, 0.30);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.button:hover { background: var(--color-button-hover); color: var(--color-button-text); text-decoration: none; transform: translateY(-2px); box-shadow: 0 10px 24px rgba(240, 194, 46, 0.38); }
+.button-small { padding: 7px 16px; font-size: 0.9rem; box-shadow: none; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin: 28px 0 8px; }
+.text-link { color: var(--color-accent); font-weight: 500; }
+@media (prefers-reduced-motion: reduce) { .button, .button:hover { transition: none; transform: none; } }

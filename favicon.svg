@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="12" fill="#f6f1e6"/>
-  <rect x="10" y="8" width="44" height="48" rx="4" fill="#fbf8f1" stroke="#2f4fa2" stroke-width="3"/>
+  <rect x="10" y="8" width="44" height="48" rx="4" fill="#fbf8f1" stroke="#6a48a8" stroke-width="3"/>
   <line x1="18" y1="22" x2="46" y2="22" stroke="#ddd4c3" stroke-width="2"/>
   <line x1="18" y1="32" x2="46" y2="32" stroke="#ddd4c3" stroke-width="2"/>
   <line x1="18" y1="42" x2="38" y2="42" stroke="#ddd4c3" stroke-width="2"/>
-  <text x="32" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="700" fill="#2f4fa2">SN</text>
+  <text x="32" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="700" fill="#6a48a8">SN</text>
 </svg>
