@@ -260,13 +260,9 @@ section { padding: 24px 0; }
   .tool-window-body { grid-template-columns: 1fr; }
   .builder-form { border-right: none; border-bottom: 1px solid var(--color-line); }
 }
-.builder-next-step {
-  margin: auto 0 0;
-  display: flex; align-items: flex-start; gap: 10px;
-  padding: 14px 20px;
-  border-top: 1px solid var(--color-line);
-  background: var(--color-accent-soft);
-  font-size: 0.95rem;
+.builder-tip { margin: 2px 0 0; font-size: 0.95rem; line-height: 1.6; color: var(--color-ink); }
+.builder-tip-highlight {
+  font-weight: 600;
+  background-image: linear-gradient(transparent 55%, var(--color-highlight) 55%);
+  padding: 0 2px;
 }
-.builder-next-step strong { color: var(--color-accent); }
-.builder-next-step-number { flex-shrink: 0; margin-top: 2px; background: var(--color-button); color: var(--color-button-text); border-radius: 999px; padding: 2px 10px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
