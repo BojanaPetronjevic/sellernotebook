@@ -191,6 +191,12 @@ section { padding: 24px 0; }
 .before-after img.image-centered { object-position: center; }
 .before-after figure a { display: block; cursor: zoom-in; }
 .before-after figure a:hover img { border-color: var(--color-accent); }
+/* Photo viewer: a clicked photo opens big on top of the page */
+.photo-viewer { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 24px; background: rgba(20, 18, 16, 0.88); cursor: zoom-out; }
+.photo-viewer.is-open { display: flex; }
+.photo-viewer img { max-width: 100%; max-height: 100%; width: auto; height: auto; border-radius: 8px; background: #fff; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); }
+.photo-viewer-close { position: absolute; top: 12px; right: 16px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.92); color: #1f1d1a; font-size: 28px; line-height: 1; cursor: pointer; }
+body.photo-viewer-open { overflow: hidden; }
 .card-thumbnail { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; border: 1px solid var(--color-line); background: #fff; margin-bottom: 12px; }
 .before-after figcaption { margin-top: 8px; font-size: 0.95rem; font-weight: 600; }
 .before-after .note-small { margin: 12px 0 0; font-size: 0.9rem; color: var(--color-muted); }
