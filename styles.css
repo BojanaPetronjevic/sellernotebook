@@ -173,7 +173,9 @@ section { padding: 24px 0; }
 
 .note { background: var(--color-accent-soft); border-radius: var(--radius); padding: 14px 18px; margin: 20px 0; font-size: 0.95rem; }
 
-.faq h3 { font-family: var(--font-body); font-size: 1.05rem; }
+.faq h3 { font-family: var(--font-body); font-size: 1.05rem; margin: 0; padding-top: 18px; border-top: 1px solid var(--color-line); }
+.faq h3:first-child { padding-top: 0; border-top: 0; }
+.faq h3 + p { margin: 6px 0 18px; }
 
 .compare { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
 .compare th, .compare td { border: 1px solid var(--color-line); padding: 8px 10px; text-align: left; vertical-align: top; }
