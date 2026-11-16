@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Illustration: a notebook page with written lines and a pen">
+  <rect width="400" height="300" fill="#ece5f7"/>
+  <g stroke="#d9cdee" stroke-width="2"><line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="140" x2="400" y2="140"/><line x1="0" y1="180" x2="400" y2="180"/><line x1="0" y1="220" x2="400" y2="220"/><line x1="0" y1="260" x2="400" y2="260"/></g>
+  <rect x="125" y="55" width="150" height="190" rx="10" fill="#ffffff" stroke="#6a48a8" stroke-width="6"/>
+  <rect x="148" y="85" width="80" height="12" rx="6" fill="#6a48a8"/>
+  <rect x="148" y="115" width="104" height="8" rx="4" fill="#c9b8ea"/>
+  <rect x="148" y="135" width="96" height="8" rx="4" fill="#c9b8ea"/>
+  <rect x="148" y="155" width="104" height="8" rx="4" fill="#c9b8ea"/>
+  <rect x="148" y="180" width="70" height="10" rx="5" fill="#f4cf4f"/>
+  <rect x="148" y="205" width="88" height="8" rx="4" fill="#c9b8ea"/>
+  <g transform="rotate(35 290 200)"><rect x="282" y="120" width="16" height="96" rx="4" fill="#f4cf4f" stroke="#6a48a8" stroke-width="4"/><path d="M282 216 l8 18 l8 -18 z" fill="#6a48a8"/></g>
+</svg>

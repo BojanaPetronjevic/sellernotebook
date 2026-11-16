@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Illustration: two chat bubbles, a customer message and a reply">
+  <rect width="400" height="300" fill="#ece5f7"/>
+  <g stroke="#d9cdee" stroke-width="2"><line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="140" x2="400" y2="140"/><line x1="0" y1="180" x2="400" y2="180"/><line x1="0" y1="220" x2="400" y2="220"/><line x1="0" y1="260" x2="400" y2="260"/></g>
+  <path d="M95 70 h150 a14 14 0 0 1 14 14 v56 a14 14 0 0 1 -14 14 h-110 l-28 22 v-22 h-12 a14 14 0 0 1 -14 -14 v-56 a14 14 0 0 1 14 -14 z" fill="#ffffff" stroke="#6a48a8" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="112" y="94" width="110" height="10" rx="5" fill="#c9b8ea"/>
+  <rect x="112" y="116" width="80" height="10" rx="5" fill="#c9b8ea"/>
+  <path d="M305 150 h-130 a14 14 0 0 0 -14 14 v50 a14 14 0 0 0 14 14 h96 l28 20 v-20 h6 a14 14 0 0 0 14 -14 v-50 a14 14 0 0 0 -14 -14 z" fill="#f4cf4f" stroke="#6a48a8" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="180" y="172" width="104" height="10" rx="5" fill="#6a48a8"/>
+  <rect x="180" y="194" width="72" height="10" rx="5" fill="#6a48a8" opacity="0.6"/>
+</svg>

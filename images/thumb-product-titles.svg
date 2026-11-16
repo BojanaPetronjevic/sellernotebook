@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Illustration: a price tag with title lines">
+  <rect width="400" height="300" fill="#ece5f7"/>
+  <g stroke="#d9cdee" stroke-width="2"><line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="140" x2="400" y2="140"/><line x1="0" y1="180" x2="400" y2="180"/><line x1="0" y1="220" x2="400" y2="220"/><line x1="0" y1="260" x2="400" y2="260"/></g>
+  <path d="M120 95 h120 l50 55 l-50 55 h-120 a12 12 0 0 1 -12 -12 v-86 a12 12 0 0 1 12 -12 z" fill="#ffffff" stroke="#6a48a8" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="250" cy="150" r="9" fill="#f4cf4f" stroke="#6a48a8" stroke-width="4"/>
+  <rect x="132" y="122" width="88" height="12" rx="6" fill="#6a48a8"/>
+  <rect x="132" y="146" width="70" height="10" rx="5" fill="#f4cf4f"/>
+  <rect x="132" y="166" width="54" height="10" rx="5" fill="#c9b8ea"/>
+</svg>
