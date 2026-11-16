@@ -60,35 +60,58 @@
     <div class="container narrow">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Prompts</nav>
       <h1>Prompt library</h1>
-      <p class="lead">Every prompt from the guides, grouped by task. Each link opens the guide at that prompt, with an explanation of how to use it.</p>
+      <p class="lead">Every prompt from the guides, in one place. Pick where you sell to see the prompts for it.</p>
       <p>Need a prompt for your own product right now? Use the <a href="/prompt-builder/">free prompt builder</a>.</p>
+      <aside class="pack-box" aria-labelledby="pack-box-title">
+        <div>
+          <h2 id="pack-box-title">Free prompt pack (PDF)</h2>
+          <p>All 16 prompts from our guides in one file. For Etsy, Amazon, Shopify and eBay. No sign-up.</p>
+        </div>
+        <a class="button" href="/downloads/seller-notebook-prompt-pack.pdf" download>Download the free PDF</a>
+      </aside>
+      <div class="platform-filter" role="group" aria-label="Show prompts for">
+        <button type="button" class="platform-filter-button is-active" data-platform="all" aria-pressed="true">All</button>
+        <button type="button" class="platform-filter-button" data-platform="etsy" aria-pressed="false">Etsy</button>
+        <button type="button" class="platform-filter-button" data-platform="amazon" aria-pressed="false">Amazon</button>
+        <button type="button" class="platform-filter-button" data-platform="shopify" aria-pressed="false">Shopify</button>
+        <button type="button" class="platform-filter-button" data-platform="ebay" aria-pressed="false">eBay</button>
+      </div>
+      <section class="prompt-group">
       <h2>Product descriptions</h2>
-      <ul>
-        <li><a href="/etsy-product-descriptions-ai/#prompt-first-draft">First draft from a fact sheet</a></li>
-        <li><a href="/etsy-product-descriptions-ai/#prompt-match-voice">Match my shop's voice</a></li>
-        <li><a href="/etsy-product-descriptions-ai/#prompt-search-words">Add search words naturally</a></li>
+      <p class="prompt-group-note">Written for Etsy. Change "Etsy" to your shop type for Shopify or eBay. For Amazon, a bullet-point guide is coming.</p>
+      <ul class="prompt-list">
+        <li data-platforms="etsy shopify ebay"><a href="/etsy-product-descriptions-ai/#prompt-first-draft">First draft from a fact sheet</a> <span class="platform-label">Etsy</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy shopify ebay"><a href="/etsy-product-descriptions-ai/#prompt-match-voice">Match my shop's voice</a> <span class="platform-label">Etsy</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy shopify ebay"><a href="/etsy-product-descriptions-ai/#prompt-search-words">Add search words naturally</a> <span class="platform-label">Etsy</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
       </ul>
+      </section>
+      <section class="prompt-group">
       <h2>Product titles</h2>
-      <ul>
-        <li><a href="/ai-product-titles/#prompt-title-options">Title options from facts and keywords</a></li>
-        <li><a href="/ai-product-titles/#prompt-title-fix">Fix one title (invented details, repeated words, length)</a></li>
+      <ul class="prompt-list">
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-product-titles/#prompt-title-options">Title options from facts and keywords</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-product-titles/#prompt-title-fix">Fix one title (invented details, repeated words, length)</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
       </ul>
+      </section>
+      <section class="prompt-group">
       <h2>Product photos</h2>
-      <ul>
-        <li><a href="/white-background-product-photos-ai/#prompt-white-background">White background, product unchanged</a></li>
+      <ul class="prompt-list">
+        <li data-platforms="etsy amazon shopify ebay"><a href="/white-background-product-photos-ai/#prompt-white-background">White background, product unchanged</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
       </ul>
+      </section>
+      <section class="prompt-group">
       <h2>Customer messages</h2>
-      <ul>
-        <li><a href="/ai-prompts-customer-messages/#prompt-shop-setup">Shop setup (use once per chat)</a></li>
-        <li><a href="/ai-prompts-customer-messages/#late-order">"Where is my order?" / late order</a></li>
-        <li><a href="/ai-prompts-customer-messages/#damaged-item">Damaged item</a></li>
-        <li><a href="/ai-prompts-customer-messages/#wrong-item">Wrong item or wrong variation</a></li>
-        <li><a href="/ai-prompts-customer-messages/#outside-policy">Refund request outside my policy</a></li>
-        <li><a href="/ai-prompts-customer-messages/#upset-customer">Angry or upset customer</a></li>
-        <li><a href="/ai-prompts-customer-messages/#custom-request">Custom order request</a></li>
-        <li><a href="/ai-prompts-customer-messages/#thank-you">Thank-you after a kind message</a></li>
-        <li><a href="/ai-prompts-customer-messages/#prompt-template">Turn a reply into a reusable template</a></li>
+      <ul class="prompt-list">
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#prompt-shop-setup">Shop setup (use once per chat)</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#late-order">"Where is my order?" / late order</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#damaged-item">Damaged item</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#wrong-item">Wrong item or wrong variation</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#outside-policy">Refund request outside my policy</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#upset-customer">Angry or upset customer</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#custom-request">Custom order request</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#thank-you">Thank-you after a kind message</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
+        <li data-platforms="etsy amazon shopify ebay"><a href="/ai-prompts-customer-messages/#prompt-template">Turn a reply into a reusable template</a> <span class="platform-label">Etsy</span> <span class="platform-label">Amazon</span> <span class="platform-label">Shopify</span> <span class="platform-label">eBay</span></li>
       </ul>
+      </section>
       <p class="soon">More prompts are added with every new guide.</p>
     </div>
   </main>
@@ -105,5 +128,28 @@
       </nav>
     </div>
   </footer>
+<script>
+/* Prompt library filter: shows only the prompts for the chosen platform. */
+(function () {
+  var buttons = document.querySelectorAll('.platform-filter-button');
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var platform = button.getAttribute('data-platform');
+      buttons.forEach(function (other) {
+        var isChosen = other === button;
+        other.classList.toggle('is-active', isChosen);
+        other.setAttribute('aria-pressed', isChosen ? 'true' : 'false');
+      });
+      document.querySelectorAll('.prompt-list li').forEach(function (item) {
+        var platforms = item.getAttribute('data-platforms').split(' ');
+        item.hidden = platform !== 'all' && platforms.indexOf(platform) === -1;
+      });
+      document.querySelectorAll('.prompt-group').forEach(function (group) {
+        group.hidden = !group.querySelector('.prompt-list li:not([hidden])');
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
