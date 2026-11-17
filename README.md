@@ -44,7 +44,16 @@ A small content site with honest AI guides for online sellers. Plain HTML and CS
 1. Copy one guide folder, rename it to the new short address, and change the title, description, date, text and the schema block in the `<head>`.
 2. Link it from its topic page (replace the "Coming soon" card) and from the Prompt library if it has prompts.
 3. Add its address to `sitemap.xml`.
-4. Upload, then request indexing in Search Console.
+4. Upload (see "Uploading changes" below), then request indexing in Search Console.
+
+## Uploading changes
+This folder is connected to the GitHub repository, so one command uploads everything that changed. In Terminal, in this folder:
+
+```bash
+git add -A && git commit -m "Short note on what changed" && git push
+```
+
+The site updates about a minute later. `drafts/` and `PLAN.md` are never uploaded (they're listed in `.git/info/exclude`, which stays on this computer). The sign-in is GitHub's own tool, `gh`, installed at `~/.local/bin/gh`. If a push ever asks for a password, run `~/.local/bin/gh auth login` again.
 
 ## Rules for the content
 - Never invent facts, prices, features or test results. Check prices and plans on the official page on the day of writing; if something can't be confirmed, write it generally.
