@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Illustration: a magnifying glass over a search bar">
+  <rect width="400" height="300" fill="#ece5f7"/>
+  <g stroke="#d9cdee" stroke-width="2"><line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="140" x2="400" y2="140"/><line x1="0" y1="180" x2="400" y2="180"/><line x1="0" y1="220" x2="400" y2="220"/><line x1="0" y1="260" x2="400" y2="260"/></g>
+  <rect x="60" y="72" width="280" height="44" rx="22" fill="#ffffff" stroke="#6a48a8" stroke-width="5"/>
+  <rect x="84" y="89" width="130" height="10" rx="5" fill="#6a48a8"/>
+  <g fill="#ffffff" stroke="#6a48a8" stroke-width="4"><rect x="76" y="128" width="200" height="30" rx="8"/><rect x="76" y="166" width="200" height="30" rx="8" fill="#f4cf4f"/><rect x="76" y="204" width="200" height="30" rx="8"/></g>
+  <g fill="#c9b8ea"><rect x="92" y="139" width="120" height="8" rx="4"/><rect x="92" y="215" width="96" height="8" rx="4"/></g>
+  <rect x="92" y="177" width="140" height="8" rx="4" fill="#6a48a8"/>
+  <g stroke="#6a48a8" stroke-width="10" stroke-linecap="round" fill="none"><circle cx="300" cy="180" r="34" fill="#ffffff"/><line x1="324" y1="204" x2="352" y2="232"/></g>
+</svg>
